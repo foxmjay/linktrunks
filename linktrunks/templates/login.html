@@ -1,0 +1,48 @@
+{% extends "skeleton2.html" %}
+
+
+{% block content %}
+
+  <body class="login-page">
+    <div class="login-box">
+      <div class="login-logo">
+        <a href="#"><b>Link</b>Trunks</a>
+      </div><!-- /.login-logo -->
+      <div class="login-box-body">
+        <p class="login-box-msg">Sign in to start your session</p>
+         <div  id="errorLabel" style="display: none;" class="form-group">
+            <label  class="control-label" for="inputError"><i class="fa fa-times-circle-o"></i> Wrong credentials </label>
+         </div>
+
+          <div class="form-group has-feedback">
+            <input id="username" type="text" class="form-control" placeholder="Username" required/>
+            <span class="glyphicon glyphicon-user form-control-feedback"></span>
+          </div>
+          <div class="form-group has-feedback">
+            <input id="password" type="password" class="form-control" placeholder="Password" required/>
+            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+          </div>
+          <div class="row">
+            <div class="col-xs-8">    
+              <div class="checkbox icheck">
+                <label>
+                  <input type="checkbox"> Remember Me
+                </label>
+              </div>                        
+            </div><!-- /.col -->
+            <div class="col-xs-4">
+              <button id="loginButton"  class="btn btn-primary btn-block btn-flat">Sign In</button>
+            </div><!-- /.col -->
+          </div>
+        
+
+        <a href="#">I forgot my password</a><br>
+        <a href="/register/" class="text-center">Register a new membership</a>
+
+      </div><!-- /.login-box-body -->
+    </div><!-- /.login-box -->
+
+  </body>
+  </html>
+    
+    {% endblock %}

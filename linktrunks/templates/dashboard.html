@@ -1,0 +1,109 @@
+{% extends "skeleton.html" %}
+
+
+{% block content %}
+
+	<!-- Right side column. Contains the navbar and content of the page -->
+	<div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+          <h1>
+            Bookmarks
+            <small>List</small>
+          </h1>
+          
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+          <div class="row">
+            <div class="col-xs-12">
+              <div id="bklist" class="box">
+                <div class="box-header">
+                </div><!-- /.box-header -->
+                <div class="box-body">
+                  <table id="example2" class="table table-bordered table-hover">
+                    <thead>
+                      <tr>
+                        <th>Id</th>
+                        <th>Title</th>
+                        <th>URL</th>
+                        <th>Tag</th>
+                        <th>Remind Me</th>
+                        <th>Created</th>
+                      </tr>
+                    </thead>
+                    <tfoot>
+                      <tr>
+                        <th>Id</th>
+                        <th>Title</th>
+                        <th>URL</th>
+                        <th>Tag</th>
+                        <th>Remind Me</th>
+                        <th>Created</th>
+                      </tr>
+                    </tfoot>
+                  </table>
+                </div><!-- /.box-body -->
+
+                <a id="add_bookmark" class="btn btn-app"> <i class="fa fa-plus"></i>Add New</a>
+                <a id="edit_bookmark" class="btn btn-app"> <i class="fa fa-edit"></i>Edit</a>
+                <a id="delete_bookmark" class="btn btn-app"  > <i class="fa fa-trash-o"></i>Delete</a>
+
+              </div><!-- /.box -->
+              
+
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+
+          <div id="bkform"class="row">
+
+              <div class="col-xs-6">
+                  <!-- general form elements -->
+
+
+    
+                  <!-- Input addon -->
+                  <div class="box box-info">
+                    <div class="box-header">
+                      <h3 class="box-title">Edit</h3>
+                    </div>
+                    <div class="box-body">
+                      <div class="input-group">
+                          <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                          <input id="edit_title" type="text" class="form-control" placeholder="Title">
+                      </div>
+                      <br/>
+                      <div class="input-group">
+                          <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                          <input id="edit_url" type="text" class="form-control" placeholder="URL">
+                      </div>
+                      <br/>
+                      <div class="input-group">
+                          <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                          <input id="edit_tags" type="text" class="form-control" placeholder="Tags">
+                      </div>
+                      <br/>
+                      <div class="input-group">
+                          <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                          <input id="edit_remindme" type="text" class="form-control" placeholder="Remind me">
+                      </div>
+                      <br/>
+
+  
+                      <a id="save_bookmark" class="btn btn-app"> <i class="fa fa-save"></i> Save </a>
+                      <a id="cancel_bookmark" class="btn btn-app"> <i class="fa fa-mail-reply"></i>Cancel</a>
+
+                    </div>
+                  </div>
+                </div>
+
+          </div>   <!-- /.row -->
+
+
+
+        </section><!-- /.content -->
+
+      </div><!-- /.content-wrapper -->
+
+{% endblock %}
